@@ -10,10 +10,6 @@
         }
       });
 
-      //We can start playing. Blue begins.
-      this.currentPlayer = this.blue;
-      this.otherPlayer   = this.red;
-
       this.Board.draw(this.canvas);
 
       $("#game_restart").attr("disabled", "disabled");
@@ -77,6 +73,10 @@
         blue : 0,
         red  : 0
       };
+
+      //We can start playing. Blue begins.
+      this.currentPlayer = this.blue;
+      this.otherPlayer   = this.red;
 
       var _that = this;
       $("#game_restart").click(function(){
